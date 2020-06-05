@@ -132,6 +132,7 @@ You can download the example of input file in this [repository](https://drive.go
 ## Authors
 
 * **Ari Wibisono** - 
+* **Petrus Mursanto** - 
 
 
 ## License
