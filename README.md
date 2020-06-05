@@ -37,11 +37,11 @@ csv_path = 'hand-atlas/export_dicom.csv'
 We utilize Faster R-CNN to extract the region of hand x-ray 1-radius-ulna, 2-carpal, 3-metacarpal, 4-phalanges, and 5-ephypisis. Please use this [tutorial](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10) for details
 
 
-### 3. Training for each region
+### 3. Training for each of regions
 
-This ipynb file use for training each of the regions of hand x-ray image 
+This ipynb file use for training each of the regions of hand x-ray image. 1-radius-ulna, 2-carpal, 3-metacarpal, 4-phalanges, and 5-ephypisis
 
-
+You can download the models from this [model repository](https://drive.google.com/open?id=1MPzi-ayeBmvaQb9DMZ55NwUwTw-W2jIR). Place this model together with the root folder of this source code.
 
 ```
 3-train-bone-age-3-dicom-tl-segmented-class-1-5.ipynb
@@ -59,7 +59,7 @@ age_df = all_df.loc[all_df['class'] == int(5)]
 print (age_df.shape)
 ```
 
-### 4. Produce FCLoutput for each region
+### 4. Produce FCL output for each region
 
 This ipynb file is use to produce FLC output from each of the regions. 
 
@@ -85,7 +85,7 @@ result-3-dicom-inception-resnet-6-tl-class-5.csv
 result-3-dicom-inception-resnet-6-tl-class-5-gt.csv
 ```
 
-You can download the output file in this [repository](https://drive.google.com/open?id=11pKWZbmnn8EqichraSFgPdB7Zv8LMDYi)
+You can download the output file in this [repository](https://drive.google.com/open?id=1oE9lveSbU_q28uWfX83gLBO5dIWpczZP)
 
 
 ### 5. Combine FCL output
@@ -104,7 +104,7 @@ output file
 ```
 result-3-dicom-inception-resnet-6-tl-class-5-weighted.csv
 ```
-You can download the example of input and output file in this [repository](https://drive.google.com/open?id=11pKWZbmnn8EqichraSFgPdB7Zv8LMDYi)
+You can download the example of input and output file in this [repository]https://drive.google.com/open?id=1oE9lveSbU_q28uWfX83gLBO5dIWpczZP)
 
 
 
@@ -125,7 +125,7 @@ df_fmaps_33 = pd.read_csv("result-3-dicom-inception-resnet-6-tl-class-3-weighted
 df_fmaps_34 = pd.read_csv("result-3-dicom-inception-resnet-6-tl-class-4-weighted.csv", header=None)
 df_fmaps_35 = pd.read_csv("result-3-dicom-inception-resnet-6-tl-class-5-weighted.csv", header=None)
 ```
-You can download the example of input file in this [repository](https://drive.google.com/open?id=11pKWZbmnn8EqichraSFgPdB7Zv8LMDYi)
+You can download the example of input file in this [repository](https://drive.google.com/open?id=1oE9lveSbU_q28uWfX83gLBO5dIWpczZP)
 
 
 
